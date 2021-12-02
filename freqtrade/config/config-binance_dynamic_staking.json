@@ -27,8 +27,8 @@
         }
     ],
     "order_types": {
-        "buy": "limit",
-        "sell": "limit",
+        "buy": "market",
+        "sell": "market",
         "emergencysell": "market",
 	    "forcebuy": "market",
         "forcesell": "market",
@@ -53,7 +53,7 @@
         "order_book_min": 1,
         "order_book_max": 1,
         "use_sell_signal": true,
-        "sell_profit_only": false,
+        "sell_profit_only": true,
         "ignore_roi_if_buy_signal": true
     },
     "exchange": {
@@ -71,14 +71,14 @@
             ".*(_PREMIUM|BEAR|BULL|DOWN|HALF|HEDGE|UP|[1235][SL])/.*",
             "(AUD|BRZ|CAD|CHF|EUR|GBP|HKD|IDRT|JPY|NGN|RUB|SGD|TRY|UAH|USD|ZAR)/.*",
             "(BUSD|CUSDT|DAI|PAXG|SUSD|TUSD|USDC|USDP|USDT|VAI)/.*",
-            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|NAVI|NMR|NOV|OG|PFL|PORTO|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
-            "(CHZ|CTXC|HBAR|NMR|SLP|XVS|ONG|ARDR|BTC|ETH|SOL)/.*"
-          ]
+            "(ACM|AFA|ALA|ALL|APL|ASR|ATM|BAR|CAI|CITY|FOR|GAL|PORTO|GOZ|IBFK|JUV|LAZIO|LEG|LOCK-1|SANTOS|NAVI|NMR|NOV|OG|PFL|PSG|ROUSH|STV|TH|TRA|UCH|UFC|YBO)/.*",
+            "(CTXC|HBAR|NMR|SLP|MEM|ONG|ARDR|AMPL|XYM|POLX|CARR|SKEY|KLV|TLOS)/.*"
+        ]
     },
     "pairlists": [
         {
 			"method": "VolumePairList",
-			"number_assets": 65,
+			"number_assets": 75,
 			"sort_key": "quoteVolume",
 			"refresh_period": 1800
 		},
